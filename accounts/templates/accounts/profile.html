@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-12 pb-5">
+        <div class="row justify-content-center">
+                <div class="card text-white bg-dark">
+                    <img class="img-fluid card-img-top" src="{{ object.social_pict }}">
+                    <div class="card-body p-1">
+                        <p class="card-text text-center">{{ object.first_name }}</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    {% if request.user.get_friends %}
+        <div class="col-12">
+            <h2 class="text-center pb-2">Random five friends list</h2>
+            <div class="row">
+                {% for friend in request.user.get_friends %}
+                    <div class="col">
+                        <div class="card mb-4 text-white bg-dark">
+                            <img class="card-img-top img-fluid" src="{{ friend.photo_100 }}" alt="">
+                            <div class="card-body p-1">
+                                <p class="card-text text-center">
+                                    <span class="van">
+                                        <small>{{ friend.first_name }} {{ friend.last_name }}</small>
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a class="btn btn-info py-0 d-flex align-items-center justify-content-center"
+                                   target="_blank" href="https://vk.com/id{{ friend.user_id }}">
+                                    <span class="pb-1 pr-2">go to</span> <i class="fab fa-vk"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+</div>
