@@ -1,7 +1,9 @@
 import urllib3
 import json
 
-token = 'access_token=bce13776bce13776bce137760dbc8b8811bbce1bce13776e006e030b1e98ac6acea6d39'
+from webim.settings import VK_OAUTH2_TOKEN
+
+token = f'access_token={VK_OAUTH2_TOKEN}'
 method = 'friends.get'
 http = urllib3.PoolManager()
 url = 'https://api.vk.com/method'
