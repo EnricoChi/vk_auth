@@ -14,6 +14,10 @@ Use secrecy for add vk app keys
      VK_OAUTH2_ID
      VK_OAUTH2_SECRET
      VK_OAUTH2_TOKEN
+
+ Run migration:
+
+     python manage.py migrate
      
  Runserver:
  
