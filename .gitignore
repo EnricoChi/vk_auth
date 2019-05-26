@@ -30,4 +30,3 @@ tmp/
 *.old
 *.scss
 media/
-secrets.json
