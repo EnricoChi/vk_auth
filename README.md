@@ -1,9 +1,9 @@
 # web app auth with vk OAUTH2
 
-# demo
+## demo
 https://vk-auth.herokuapp.com/
 
-# install
+## install
 Clone repository
 
 Install requirements in your virtualenv
