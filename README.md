@@ -1,9 +1,8 @@
-# web app auth with vk OAUTH2
-Install requirements in your virtualenv
-
 # demo
 https://vk-auth.herokuapp.com/
 
+# web app auth with vk OAUTH2
+Install requirements in your virtualenv
 
     pip install -r requirements.txt
 
