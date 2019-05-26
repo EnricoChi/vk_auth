@@ -27,7 +27,6 @@ tmp/
 *.stylelintrc.json
 *.tagconfig
 *.md
-*development.py
 *.old
 *.scss
 media/
