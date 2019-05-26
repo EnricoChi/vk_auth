@@ -3,6 +3,7 @@ chardet==3.0.4
 defusedxml==0.6.0
 Django==2.2.1
 django-secrecy==0.99.5
+gunicorn==19.9.0
 idna==2.8
 oauthlib==3.0.1
 PyJWT==1.7.1
