@@ -32,7 +32,7 @@ class Account(AbstractBaseUser, PermissionsMixin):
 
     @property
     def get_friends(self):
-        friends_list = get_vk_friends(self)['response']
+        friends_list = get_vk_friends(self)['response']['items']
 
         return friends_list
 

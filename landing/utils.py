@@ -15,6 +15,6 @@ def get_vk_friends(vk_id):
     order = 'order=random'
     count = 'count=5'
     lang = 'lang=ru'
-    path = f'{url}/{method}?{parameter}&{order}&{count}&{fields}&{lang}&{token}&v=V'
+    path = f'{url}/{method}?{parameter}&{order}&{count}&{fields}&{lang}&{token}&v=5.101'
     request = http.request('GET', path)
     return json.loads(request.data.decode('utf-8'))

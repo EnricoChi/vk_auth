@@ -9,7 +9,6 @@
                 </div>
         </div>
     </div>
-
     {% if request.user.get_friends %}
         <div class="col-12">
             <h2 class="text-center pb-2">Random five friends list</h2>
@@ -27,7 +26,7 @@
                             </div>
                             <div class="card-footer text-center">
                                 <a class="btn btn-info py-0 d-flex align-items-center justify-content-center"
-                                   target="_blank" href="https://vk.com/id{{ friend.user_id }}">
+                                   target="_blank" href="https://vk.com/id{{ friend.id }}">
                                     <span class="pb-1 pr-2">go to</span> <i class="fab fa-vk"></i>
                                 </a>
                             </div>
